@@ -36,7 +36,7 @@ def stackImages(scale,imgArray):
         ver = hor
     return ver
 
-cap = cv2.VideoCapture(r'C:\Users\dlopez\Downloads\car_racing.mp4')
+cap = cv2.VideoCapture(r'C:\Users\dlopez\Desktop\Github\Cam_Shift_Tracking\car_racing.mp4')
 #link to the video as argument
 
 ret, frame = cap.read()
@@ -48,7 +48,7 @@ width = int(cap.get(3))
 height = int(cap.get(4))
 #video height
 
-out = cv2.VideoWriter(r'C:\Users\dlopez\Desktop\Deep Learning\imagenes\car_racing_cam_shift.avi', 
+out = cv2.VideoWriter(r'C:\Users\dlopez\Desktop\Github\Cam_Shift_Tracking\car_racing_cam_shift.avi', 
                        cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), 30, (width, height))
 #path for the output (we are creating a video)
 #codec used for compressing frames
